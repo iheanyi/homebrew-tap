@@ -5,21 +5,21 @@
 class Grove < Formula
   desc "Development server manager for git worktrees"
   homepage "https://github.com/iheanyi/grove"
-  version "0.2.6"
+  version "0.2.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/iheanyi/grove/releases/download/v0.2.6/grove_0.2.6_darwin_amd64.tar.gz"
-      sha256 "740267ae344b2af22bb3ca53351a38f615fa580c0bfd07f4c319e74f247ac2c6"
+      url "https://github.com/iheanyi/grove/releases/download/v0.2.7/grove_0.2.7_darwin_amd64.tar.gz"
+      sha256 "0fa9abfffb37d57c8fe004e7b7be7faf6bec1f35a4b5d844645d6aa56a440fce"
 
       def install
         bin.install "grove"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/iheanyi/grove/releases/download/v0.2.6/grove_0.2.6_darwin_arm64.tar.gz"
-      sha256 "9737b4a4c341e95d32ef09fc9e9d651e7d7124ccd291a925b314abb9c8dd1df3"
+      url "https://github.com/iheanyi/grove/releases/download/v0.2.7/grove_0.2.7_darwin_arm64.tar.gz"
+      sha256 "c03802adb0facf443955050915c6242306f6cb6bdfb916a39a3b322a9a0a2664"
 
       def install
         bin.install "grove"
@@ -29,15 +29,15 @@ class Grove < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/iheanyi/grove/releases/download/v0.2.6/grove_0.2.6_linux_amd64.tar.gz"
-      sha256 "ea5294e387a99752a78e24e627deefbe1a5a37e03522833def6b1f7ea9ecad60"
+      url "https://github.com/iheanyi/grove/releases/download/v0.2.7/grove_0.2.7_linux_amd64.tar.gz"
+      sha256 "1c17d4792ea561a1a2b71c6771b439435584b5676bc148891e123f36e7876d23"
       def install
         bin.install "grove"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/iheanyi/grove/releases/download/v0.2.6/grove_0.2.6_linux_arm64.tar.gz"
-      sha256 "3ef5ebf66297ae9ad4e240086f10973018911b05147229d11e0fed7a6d36aaab"
+      url "https://github.com/iheanyi/grove/releases/download/v0.2.7/grove_0.2.7_linux_arm64.tar.gz"
+      sha256 "0244a6a367e377ee29b8e62276997c0fd48df9ffb7de6f693b5b710fa57275eb"
       def install
         bin.install "grove"
       end
