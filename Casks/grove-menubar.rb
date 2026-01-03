@@ -1,6 +1,6 @@
 cask "grove-menubar" do
-  version "0.3.1"
-  sha256 "0a75c1f293bf7bf886292edd587140637495b79046276ed4d3d2bca45897f8d5"
+  version "0.4.0"
+  sha256 "b9f58a7732686a6548440425e1452c36867c8ed8f96e01a28cd276ddf06612b0"
 
   url "https://github.com/iheanyi/grove/releases/download/menubar-v#{version}/Grove-#{version}-macos.zip"
   name "Grove"
